@@ -1,1 +1,36 @@
+# Build output directory
 build/
+.devcontainer/
+
+# SDK configuration files
+sdkconfig
+sdkconfig.old
+sdkconfig.defaults.old
+
+# Eclipse IDE files (if using Eclipse)
+.project
+.cproject
+.settings/
+
+# VS Code files (if using VS Code)
+.vscode/
+
+# Compiled files
+*.o
+*.elf
+*.bin
+*.map
+*.a
+
+# Flash related files
+flash_project_args
+
+# Temporary files
+*.tmp
+*~
+
+# Log files
+*.log
+
+# Private key files (if any are used and not meant for version control)
+*.pem
