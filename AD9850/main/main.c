@@ -72,6 +72,7 @@ void AD9850_set_freq_and_phase(float freq_word, float phase)
         uint8_t phase_word = (uint8_t)(((phase / 360.0f) * 4294967296.0f));
         // Фаза нужна для синхронизации двух и более устройств
         // хз как тут тестить с одним
+        // 5 MSBs = phase = 0, 3 LSBs must be zero
         // |= (phase << 3)
     }
     AD9850_send_byte(0);
